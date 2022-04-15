@@ -19,6 +19,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
+    {{-- user definde css --}}
+    <link rel="stylesheet" href="css/hoverEffect.css">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- style css -->
@@ -248,7 +250,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- news brand -->
                     <div id="brand" class="brand-bg">
                         <h3>New brands</h3>
