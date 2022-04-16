@@ -40,4 +40,9 @@ class ProductController extends Controller
         return view('user.home');
         // return redirect()->route('list.category')->with('flash_message_success','Category added Successfully !');
     }
+
+    public function updateView($id){
+        $data=Product::find($id);
+        return view('updateView', compact('data'));
+    }
 }
