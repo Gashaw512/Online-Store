@@ -41,8 +41,9 @@ class ProductController extends Controller
         // return redirect()->route('list.category')->with('flash_message_success','Category added Successfully !');
     }
 
-    public function updateView($id){
-        $data=Product::find($id);
-        return view('updateView', compact('data'));
+    public function updateView(){
+        // $data=Product::find($id);
+        // return view('products.updateView', compact('data'));
+        return view('products.updateView');
     }
 }
