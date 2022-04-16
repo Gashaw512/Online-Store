@@ -12,6 +12,9 @@ Route::get('/add_product', function(){
 });
 
 Route::post('/save', [ProductController::class, "add_product"]);
+
+
+Route::get('/updateView', [ProductController::class, "updateView"]);
 // Route::post('/users', [ProductController::class, "add_product"]);
 
 // Admin action

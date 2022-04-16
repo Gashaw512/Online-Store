@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <!-- Styles -->
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @include('admin.css')
     <style>
         td img {
@@ -35,6 +37,7 @@
                 {{-- @include('admin.body') --}}
 
                 <div class="content">
+
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card">

@@ -79,12 +79,11 @@
             </div>
         </div>
         <!-- end news shoes -->
+        
 
         <!-- end Categories -->
-
+{{--  Start some content --}}
         <section>
-            <!--  save -->
-
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -103,14 +102,9 @@
             </div>
             <!-- end save -->
         </section>
-
         <!-- news Jewellery -->
         <div class="container">
             <div class="row">
-
-
-
-                
                 <div class="col-md-12">
                     <div id="jewellery" class="Jewellery-bg">
                         <h3>New Jewellery</h3>

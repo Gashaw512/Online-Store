@@ -1,25 +1,105 @@
+
+<style>
+
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+
+body {
+    min-height: 110vh;
+    background-color: #4ca1af;
+    background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
+}
+
+</style>
+
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Online Store</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="#"><img style="margin-right: 15px; display:inline;"
+                        src="icon/1.png" alt="#" />+2519 706 559 25</a></li>
+                    <li class="nav-item"><a href="#"> <img style="margin-right: 15px; display:inline;"
+                        src="icon/2.png" alt="#" /></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Portfolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
 <header>
     <!-- header inner -->
-    <div class="head_top">
+    <div class="head_top" style="margin-top: 0%;">
         <div class="header">
 
             <div class="container-fluid">
 
                 <div class="row">
-                    <div class="col-lg-3 logo_section">
-                        <div class="full">
-                            <div class="center-desk">
-                                <div class="logo">
-                                    <a href="index.html"><img src="images/logo.png" alt="#"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    
                     <div class="col-lg-9">
                         <div class="right_header_info">
 
-                            <ul class=" navbar-nav ml-auto " style="padding-left:0px; display:inline;">
+                            <ul class=" navbar-nav ml-auto mr-auto  " style="padding-left:0px; display:inline; " style="width: 100%">
                                 <li class="menu_iconb nav-item " style="display:inline;">
                                     <a href="#"><img style="margin-right: 15px; display:inline;"
                                             src="icon/1.png" alt="#" />+2519 706 559 25</a>
@@ -81,6 +161,7 @@
         </div>
 
         <!-- end header inner -->
+         in  
 
         <!-- end header -->
         <section class="slider_section">
@@ -89,12 +170,13 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mapimg">
                             <div class="text-bg">
-                                <h1>All <br>
-                                    In<br>
-                                    One <br>
-                                    Shop</h1>
+                                <h1>Stand <br>
+                                    out<br>
+                                    in <br>
+                                    the<br>
+                                    crowd</h1>
                                 <span>A new type of storefront</span>
-                                <a href="#">Buy now</a>
+                                <a href="{{ route('register') }}">Free trial</a>
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
