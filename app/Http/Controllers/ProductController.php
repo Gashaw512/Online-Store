@@ -9,11 +9,12 @@ use Illuminate\Http\UploadedFile;
 
 class ProductController extends Controller
 {
-    //
+   
     public function add_product(Request $request)
     {
-        // $test=$request->file('product_image')->getSize();
+        //  $test=$request->file('product_image')->extension();
         // dd($test);
+        //dd($request->hasfile('product_image'));
         //dd($request->all());
         // $newImageName=time().'-'. $request->name .'.'. $request->product_image->extension();
         // $request->product_image->move(public_path('images'),  $newImageName) ;
@@ -23,21 +24,31 @@ class ProductController extends Controller
         //     'name'=>'required',
         //     'quantity'=>'required|integer|min:0',
         //     'price'=>'required|numeric|between:0,99.99',
-        //     // 'product_image'=>'required|mimes:jpg, png, jpeng|max: 5064'
+        //     'product_image'=>'required|mimes:jpg, png, jpeng|max: 5064'
         // ]);
-        $newImageName=time().'-'. $request->name .'.'. $request->product_image->extension();
-        $request->product_image->move(public_path('uploads'),  $newImageName) ;
-
+        
         $product = new Product();
+        if($request->hasfile('product_image')){
+            $newImageName=time().'-'. $request->name .'.'. $request->product_image->extension();
+            $request->product_image->move(public_path('uploads'),  $newImageName) ;
+            $product->product_image = $newImageName;
+        
+        }
+        else{
+            $product->product_image='';
+        }
+        
 
         $product->name = $request->input('name');
         $product->quantity = $request->input('quantity');
         $product->price = $request->input('price');
         $product->category = $request->input('category');
-        $product->product_image = $newImageName;
+
+      
         $product->save();
-        return redirect()->back()->with('message', 'Product added success fully');
-        return view('user.home');
+        // return redirect()->back()->with('message', 'Product added success fully');
+        $data=Product::all();
+        return view('user.home',compact('data'));
         // return redirect()->route('list.category')->with('flash_message_success','Category added Successfully !');
     }
 

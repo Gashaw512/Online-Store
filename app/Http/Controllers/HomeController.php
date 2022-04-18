@@ -36,7 +36,7 @@ class HomeController extends Controller
         }
         else{
             $data=Product::all();
-            return view('user.home',compact('data'));
+            return view('user.wellCome',compact('data'));
         }
         
         }
