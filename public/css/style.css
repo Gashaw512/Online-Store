@@ -1831,6 +1831,332 @@ line-height: 15px;
 
 /** end Jewellery section **/
 
+.Sport-bg  {
+box-shadow: #ddd 0px 0px 19px 8px;
+margin-bottom: 29px;
+padding: 40px 25px;
+margin-top: 85px;
+  }
+ .Sport-bg h3 {
+ 	font-size:26px; 
+ 	line-height: 30px; 
+ 	color: #000; 
+ 	font-weight: bold;  
+ 	text-transform: uppercase;
+    padding-bottom: 30px;
+ 	 }
+ .Sport-bg .Sport-box {
+ 	background: #f0efef;
+ 	text-align: center;
+ 	padding: 25px 20px 25px 20px;
+ 	text-align: center;
+
+ }
+
+
+.Sport-bg .Sports-box i {
+    height: 200px;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Sport-bg .Sport-box img {
+    max-height: 290px;
+}
+
+
+ .Sport-bg .Sportr-box  h4 {
+ color: #020000;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+padding-bottom: 0px;
+
+ }
+ .Sport-bg .Sport-box h5 {
+top: 0px;
+position: absolute;
+background: #ee3e0f;
+left: 16px;
+font-size: 16px;
+color: #fff;
+padding: 8px 20px;
+line-height: 15px;
+ }
+ .Sport-bg .Sport-box span {
+ 	color: #020000;
+ 	font-weight: 500;
+ 	font-size: 17px;
+ 	line-height: 22px;
+ }
+
+/** end Sport section **/
+
+.shoes-bg  {
+box-shadow: #ddd 0px 0px 19px 8px;
+margin-bottom: 29px;
+padding: 40px 25px;
+margin-top: 85px;
+  }
+ .shoes-bg h3 {
+ 	font-size:26px; 
+ 	line-height: 30px; 
+ 	color: #000; 
+ 	font-weight: bold;  
+ 	text-transform: uppercase;
+    padding-bottom: 30px;
+ 	 }
+ .shoes-bg .shoes-box {
+ 	background: #f0efef;
+ 	text-align: center;
+ 	padding: 25px 20px 25px 20px;
+ 	text-align: center;
+
+ }
+
+
+.shoes-bg .shoes-box i {
+    height: 200px;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.shoes-bg .shoes-box img {
+    max-height: 290px;
+}
+
+
+ .shoes-bg .shoes-box  h4 {
+ color: #020000;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+padding-bottom: 0px;
+
+ }
+ .shoes-bg .shoes-box h5 {
+top: 0px;
+position: absolute;
+background: #ee3e0f;
+left: 16px;
+font-size: 16px;
+color: #fff;
+padding: 8px 20px;
+line-height: 15px;
+ }
+ .shoes-bg .shoes-box span {
+ 	color: #020000;
+ 	font-weight: 500;
+ 	font-size: 17px;
+ 	line-height: 22px;
+ }
+
+/** end shoes section **/
+
+
+.Watches-bg  {
+box-shadow: #ddd 0px 0px 19px 8px;
+margin-bottom: 29px;
+padding: 40px 25px;
+margin-top: 85px;
+  }
+ .Watches-bg h3 {
+ 	font-size:26px; 
+ 	line-height: 30px; 
+ 	color: #000; 
+ 	font-weight: bold;  
+ 	text-transform: uppercase;
+    padding-bottom: 30px;
+ 	 }
+ .Watches-bg .Watches-box {
+ 	background: #f0efef;
+ 	text-align: center;
+ 	padding: 25px 20px 25px 20px;
+ 	text-align: center;
+
+ }
+
+
+.Watches-bg .Watches-box i {
+    height: 200px;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Watches-bg .Watches-box img {
+    max-height: 290px;
+}
+
+
+ .Watches-bg .Watches-box  h4 {
+ color: #020000;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+padding-bottom: 0px;
+
+ }
+ .Watches-bg .Watches-box h5 {
+top: 0px;
+position: absolute;
+background: #ee3e0f;
+left: 16px;
+font-size: 16px;
+color: #fff;
+padding: 8px 20px;
+line-height: 15px;
+ }
+ .Watches-bg .Watches-box span {
+ 	color: #020000;
+ 	font-weight: 500;
+ 	font-size: 17px;
+ 	line-height: 22px;
+ }
+
+/** end Watchess section **/
+
+.Electronics-bg  {
+box-shadow: #ddd 0px 0px 19px 8px;
+margin-bottom: 29px;
+padding: 40px 25px;
+margin-top: 85px;
+  }
+ .Electronics-bg h3 {
+ 	font-size:26px; 
+ 	line-height: 30px; 
+ 	color: #000; 
+ 	font-weight: bold;  
+ 	text-transform: uppercase;
+    padding-bottom: 30px;
+ 	 }
+ .Electronics-bg .Electronics-box {
+ 	background: #f0efef;
+ 	text-align: center;
+ 	padding: 25px 20px 25px 20px;
+ 	text-align: center;
+
+ }
+
+
+.Electronics-bg .Electronics-box i {
+    height: 200px;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Electronics-bg .Electronics-box img {
+    max-height: 290px;
+}
+
+
+ .Electronics-bg .Electronics-box  h4 {
+ color: #020000;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+padding-bottom: 0px;
+
+ }
+ .Electronics-bg .Electronics-box h5 {
+top: 0px;
+position: absolute;
+background: #ee3e0f;
+left: 16px;
+font-size: 16px;
+color: #fff;
+padding: 8px 20px;
+line-height: 15px;
+ }
+ .Electronics-bg .Electronics-box span {
+ 	color: #020000;
+ 	font-weight: 500;
+ 	font-size: 17px;
+ 	line-height: 22px;
+ }
+
+/** end Electronics section **/
+
+
+.Cloth-bg  {
+box-shadow: #ddd 0px 0px 19px 8px;
+margin-bottom: 29px;
+padding: 40px 25px;
+margin-top: 85px;
+  }
+  .Cloth-bg h3 {
+ 	font-size:26px; 
+ 	line-height: 30px; 
+ 	color: #000; 
+ 	font-weight: bold;  
+ 	text-transform: uppercase;
+    padding-bottom: 30px;
+ 	 }
+	  .Cloth-bg .Cloth-box {
+ 	background: #f0efef;
+ 	text-align: center;
+ 	padding: 25px 20px 25px 20px;
+ 	text-align: center;
+
+ }
+
+
+ .Cloth-bg .Cloth-box i {
+    height: 200px;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Cloth-bg .Cloth-box img {
+    max-height: 290px;
+}
+
+
+.Cloth-bg .Cloth-box  h4 {
+ color: #020000;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+padding-bottom: 0px;
+
+ }
+ .Cloth-bg .Cloth-box h5 {
+top: 0px;
+position: absolute;
+background: #ee3e0f;
+left: 16px;
+font-size: 16px;
+color: #fff;
+padding: 8px 20px;
+line-height: 15px;
+ }
+ .Cloth-bg .Cloth-box span {
+ 	color: #020000;
+ 	font-weight: 500;
+ 	font-size: 17px;
+ 	line-height: 22px;
+ }
+
+
 /**  Kids section **/
 .Kids_background {
 	background: #ee3e0f;

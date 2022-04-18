@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Add Product</title>
+  <title>Online Store</title>
 
   @include('products.css')
   {{-- @include('user.css'); --}}
@@ -17,22 +17,13 @@
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
       <div>
         <h1 style=" text-align:center;">Add Products</h1>
-      </div>
-
-
-      @if(session()->has('message'))
-
-      <div class=" alert alert-success">
-
-        <div class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3" role="alert">
-          <button type="button" class="close" data-dismiss='alert'></button>
-          {{session()->get('message')}}
+        @if(session()->has('message'))
+        <div class="alert alert-success" style="text-align:center;">
+            <button type="button" class="close" data-dismiss='alert'>X</button>
+            {{session()->get('message')}}
         </div>
+        @endif
       </div>
-      @endif
-
-
-
       <div class=" sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
 
         <div class="form-center">
@@ -41,18 +32,18 @@
             @csrf
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" class="input" placeholder="Product Name">
+              <input type="text" id="name" name="name" class="input" placeholder="Product Name" required>
             </div>
 
             <div class="form-group">
 
               <label for="quantity">Quantity</label>
-              <input type="number" id="quantity" name="quantity" class="input" placeholder="Product Quantity">
+              <input type="number" id="quantity" name="quantity" class="input" placeholder="Product Quantity" required>
             </div>
 
             <div class="form-group">
               <label for="price">Price</label>
-              <input class="input" type="decimal" id="price" name="price" placeholder="Product Price">
+              <input class="input" type="decimal" id="price" name="price" placeholder="Product Price" required>
             </div>
 
 
@@ -79,10 +70,6 @@
               <input type="file" id="product_image" name="product_image">
             </div>
             {{-- <img src="{{asset('uploads/' .  $product->product_image)}}" alt=""> --}}
-
-
-
-
             <button type="submit" class="favorite styled">Save</button>
           </form>
         </div>

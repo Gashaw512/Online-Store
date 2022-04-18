@@ -39,8 +39,8 @@
                     name="password_confirmation" required autocomplete="new-password" />
             </div>
 
-            @if(Auth::id())
-            @if(Auth::user()->userType == '1')
+            {{-- @if(Auth::id())       
+            @if(Auth::user()->userType == '1') --}}
             <div class="mt-4">
                 <div>
                     <x-jet-label for="userType" value="{{ __('User Type'  ) }}" />
@@ -48,16 +48,10 @@
                         :value="old('userType')" required autofocus autocomplete="userType" min="0" max="1"
                         placeholder="Write only 0 ( Standard user ) or 1 ( Admin )" />
                 </div>
-                {{--
-                <x-jet-label for="userType" value="{{ __('Select role') }}" />
-                <input type="radio" />
-                <input type="radio" /> --}}
-
             </div>
 
-            @endif
-            @endif
-
+            {{-- @endif
+            @endif --}}
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
             <div class="mt-4">
@@ -81,6 +75,7 @@
             @endif
 
             <div class="flex items-center justify-end mt-4">
+                
                 @if(!Auth::id())
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
                     {{ __('Already registered?') }}
@@ -90,7 +85,6 @@
                     {{ __('Register') }}
                 </x-jet-button>
             </div>
-
         </form>
     </x-jet-authentication-card>
 </x-guest-layout>
