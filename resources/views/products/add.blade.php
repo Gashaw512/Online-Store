@@ -19,16 +19,15 @@
         <h1 style=" text-align:center;">Add Products</h1>
         @if(session()->has('message'))
         <div class="alert alert-success" style="text-align:center;">
-            <button type="button" class="close" data-dismiss='alert'>X</button>
-            {{session()->get('message')}}
+          <button type="button" class="close" data-dismiss='alert'>X</button>
+          {{session()->get('message')}}
         </div>
         @endif
       </div>
       <div class=" sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
 
         <div class="form-center">
-          <form action="{{url('/save')}}" method="POST" enctype="multipart/form-data">
-
+          <form action="{{url('/saveProduct')}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
               <label for="name">Name</label>
@@ -46,8 +45,7 @@
               <input class="input" type="decimal" id="price" name="price" placeholder="Product Price" required>
             </div>
 
-
-            <div class="form-group" style="width:200px; text-align:center" >
+            <div class="form-group" style="width:200px; text-align:center">
               <label for="category">Category</label>
               <div class="custom-select" style="width:200px; text-align:center; margin:8px;">
                 <select name="category" id="category">
@@ -69,12 +67,10 @@
               <label for="product_image">Image</label>
               <input type="file" id="product_image" name="product_image">
             </div>
-            {{-- <img src="{{asset('uploads/' .  $product->product_image)}}" alt=""> --}}
             <button type="submit" class="favorite styled">Save</button>
           </form>
         </div>
       </div>
     </div>
   </div>
-
 </html>
