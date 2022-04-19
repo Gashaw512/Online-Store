@@ -19,8 +19,11 @@
             @include('user.sidebar')
         </div>
         <div id="content">
-         
-            @include('user.header');
+            <header class="header" style="max-height: 15%">
+                @include('user.navBar')
+            </header>
+            {{-- @include('user.sliderSection') --}}
+        
            
             <div class="Categories">
                 <div class="container">
