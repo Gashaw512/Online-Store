@@ -7,7 +7,9 @@
 
     <div class="wrapper">
         <div class="sidebar">
-            @include('user.sidebar')
+            <header class="header" style="max-height: 15%">
+                @include('user.navBar')
+            </header>
         </div>
         <div id="content">
          

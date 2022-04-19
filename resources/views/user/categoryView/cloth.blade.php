@@ -10,12 +10,12 @@
             @include('user.sidebar')
         </div>
         <div id="content">
-            @include('user.header');
+            <header class="header" style="max-height: 15%">
+                @include('user.navBar')
+            </header>
            
             <div class="Categories">
                 <div class="container">
-                    {{-- categories link --}}
-                  {{-- <x-modal/> --}}
                     @include('user.categoriesLink')
                     <div class="container">
                         <div class="row">

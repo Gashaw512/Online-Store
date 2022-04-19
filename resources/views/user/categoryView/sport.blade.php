@@ -11,7 +11,9 @@
         </div>
         <div id="content">
          
-            @include('user.header');
+            <header class="header" style="max-height: 15%">
+                @include('user.navBar')
+            </header>
            
             <div class="Categories">
                 @include('user.categoriesLink')

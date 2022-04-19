@@ -11,7 +11,9 @@
         </div>
         <div id="content">
          
-            @include('user.header');
+            <header class="header" style="max-height: 15%">
+                @include('user.navBar')
+            </header>
            
             <div class="Categories">
                 <div class="container">
@@ -19,6 +21,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div id="Electronics" class="Electronics-bg">
+                                @if(!$data->first())
+                                <h3>Currently You have not Electronics product on the Store</h3>
+                                @else
                                 <h3>New Electronics</h3>
                                 <div class="row">
                                     @foreach($data as $product)
@@ -38,6 +43,7 @@
                                     @endif
                                     @endforeach
                                 </div>
+                                @endif
                             </div>
                             <a class="seemore" href="#">See more</a>
                         </div>
