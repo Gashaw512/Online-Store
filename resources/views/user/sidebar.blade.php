@@ -8,7 +8,7 @@
         <ul class="list-unstyled components">
     
             <li class="active">
-                <a href="index.html" >Home</a>
+                <a href="/" >Home</a>
             </li>
             <li>
                 <a href="#brand" style="color: black">Brands</a>
